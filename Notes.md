@@ -4,6 +4,7 @@ In this API the request cannot be simply sent by POSTMAN in url-encoded. You hav
 
 This is because we have used a Body Parser of JSON. Also in the main application we have to do this
 
+```
 return fetch("https://redux-todo-api-endpoint.herokuapp.com/api/todos", {
       method: "POST",
       headers: new Headers({
@@ -11,3 +12,4 @@ return fetch("https://redux-todo-api-endpoint.herokuapp.com/api/todos", {
       }),
       body: JSON.stringify({ task }) //OOWHOOOO
     })
+```
